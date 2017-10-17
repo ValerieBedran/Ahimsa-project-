@@ -1,5 +1,7 @@
 *{
    box-sizing: border-box;
+   border: 2px solid grey;
+
 
 }
 
@@ -7,6 +9,7 @@
 body{
   font-family: 'Indie Flower', cursive;
   line-height: 1,5;
+
 }
 h1 {
   font-family: 'Alex Brush', cursive;
@@ -38,15 +41,18 @@ div.onenav, div.twonav{
   display: flex !important;
   flex-direction: row-reverse;
   justify-content:space-between;
-
+}
+.onenav{
+  padding-left: 5%;
+}
+.twonav{
+  padding-right: 5%;
 }
 nav{
-  background-color: #67b0c8;
-  margin-left: 5%;
-  margin-right: 5%;
+  background-color: #77b8ce;
 }
 nav a{
-  color:white;
+  color:snow;
 }
 
 nav a:hover{
@@ -68,12 +74,15 @@ nav a:hover{
 /*Current project*/
 .current{
   height: 80%;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .current img{
 width: 70%;
 justify-content: center;
+padding-left: 10%;
 }
 
 /*VIDEO*/
