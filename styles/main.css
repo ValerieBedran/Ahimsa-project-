@@ -1,16 +1,14 @@
 *{
    box-sizing: border-box;
-
-
-
+   margin:0;
+   padding:0;
+   border: 2px solid grey;
 }
 
 /* GENERAL STYLES*/
 body{
   font-family: 'Lato', sans-serif;
-  line-height: 1,7;
   letter-spacing: 1px;
-
 }
 h1 {
   font-family: 'Alex Brush', cursive;
@@ -59,6 +57,7 @@ nav{
 
 nav a{
   color:#79b9d0;
+  text-decoration: none;
 }
 
 nav a:hover{
@@ -124,16 +123,22 @@ nav a:hover{
 
 /*CONTACT FORM*/
 #contact {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
+  background-image:url('../images/pic4.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: justify;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 #contact form{
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 .get_in_touch{
   margin-top: 10%;
-  margin-bottom: 10%;  
+  margin-bottom: 10%;
 }
 
 /* MOBILE MENU STYLES*/
@@ -176,16 +181,6 @@ nav a:hover{
 .animate{
   transition: all 172ms ease-out;
 }
-
-/* Media Query*/
-@media all and (max-width:767px) {
-  .nav_show{
-    display: block;
-  }
-  .nav_hide{
-    display: none;
-  }
-}
 /* The Button*/
 
 .button{
@@ -201,4 +196,17 @@ nav a:hover{
   padding: 10px 14px;
   border-radius: 6px;
   color: #fff;
+}
+
+/* Media Query*/
+@media all and (max-width:767px) {
+  .nav_show{
+    display: block;
+  }
+  .nav_hide{
+    display: none;
+  }
+  .emptyDiv{
+    display:none;
+  }
 }
