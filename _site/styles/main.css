@@ -1,6 +1,6 @@
 *{
    box-sizing: border-box;
-  border: 1px solid grey;
+
 }
 
 /* GENERAL STYLES*/
@@ -14,10 +14,17 @@ h1 {
   font-size:60px;
   word-spacing:20px;
   }
-h2,h3,h4,h5,h6{
+h2,h4,h5,h6{
+  font-family: 'Alex Brush', cursive;
+  color:black;
+  letter-spacing: 3px;
+  text-align: center;
+}
+h3{
   font-family: 'Alex Brush', cursive;
   color:snow;
   letter-spacing: 3px;
+  font-size: 30px;
 }
 
 img{
@@ -56,11 +63,23 @@ nav a:hover{
 }
 
 /*Current project*/
-.class h2{
-  color:black!important;
-  justify-content: center;
+.current{
+background-color:
 }
 
+/*VIDEO*/
+#video{
+  height: 60vh;
+  padding: 0;
+}
+#video iframe{
+  width: 100%;
+  height:100%;
+}
+
+.videodes p{
+  color: red;
+}
 
 /* SUCCESS STORIES SECTION*/
 .sucess img{
