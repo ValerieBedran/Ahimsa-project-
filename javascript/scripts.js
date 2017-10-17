@@ -51,9 +51,8 @@ function changeBodyClass(event) {
 */
 $('a').on('click', changeBodyClass);
 
-// STICKY MENU//
-$("#sticky-button").sticky({
-    topSpacing: 0
+// STICKY NAV//
+
 
 //This closes jquery
 

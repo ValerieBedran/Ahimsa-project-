@@ -2,7 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts from google-->
-<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Architects+Daughter|Great+Vibes|Handlee|Indie+Flower|Patrick+Hand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Architects+Daughter|Great+Vibes|Handlee|Indie+Flower|Patrick+Hand|Inconsolata|Josefin+Sans|Lato" rel="stylesheet">
   <!--normalize file-->
   <link rel="stylesheet" href="styles/normalize.css">
   <!--Grids-->
@@ -16,12 +16,12 @@
 <body>
   <!-- HEADER SECTION-->
   <header>
-    <nav class="grid-spaceBetween nav_hide" id="sticky-nav">
+    <nav class="grid-spaceBetween nav_hide" id="sticky-button">
       <!--NAVIGATION DIV-->
       <div class="onenav col-4">
         <a href="#contact">Participate</a>
-        <a href="current project">Current project</a>
         <a href="#about">About</a>
+        <a href="#current_project">Current project</a>
         <a href="#home">Home</a>
       </div>
       <!--SMM DIV-->
@@ -58,11 +58,11 @@
         <h1 class="col-7"> Ahimsa Project</h1>
         <h3 class="col-7">Translations that matter</h3>
       </div>
-      
-      <a id="sticky-button" class="button" href="#call-to-action"><span>Buy me</span></a>
+
+
 
       <!--CURRENT PROJECT-->
-      <section id="current project">
+      <section id="current_project" class="current">
         <div class"grid-spaceAround ">
           <h2 class="col-7">Current project</h2>
         </div>
@@ -71,8 +71,8 @@
           <div class="col-6">
             <img src="../images/raw.jpg" alt="raw documentory">
           </div>
-          <div class="col-6">
-            <h2>RAW</h2>
+          <div class="raw col-6">
+            <h2>Translating "Raw"</h2>
             <p>At the age of 51 she was diagnosed with highly aggressive carcinoma breast cancer and was told she had 6 months to live.
             6 months latter she was completely clean. She switched to a 100% raw diet, started to run marathons, set a World Record of 366 consecutive Marathons in one year, gained 40 000 followers all over the world and inspired Brunei government to change state nutrition policy.
             Now she is 68, feels herself stronger every day and keeps beating world records.</p>
@@ -84,48 +84,56 @@
 
    <!-- VIDEO SECTION-->
   <section id="video">
-    <iframe src="https://www.youtube.com/embed/9W-abtvaojM" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uDnd_C8Hkp8" frameborder="0" allowfullscreen></iframe>
   </section>
 
 
 
   <!--DESCRIPTION OF THE PROJECT-->
-  <section class="grid-spaceAround" id="about">
+  <section class="grid-spaceAround project_description" id="about">
     <h2 class="col-7">Project Description</h2>
     <p class="col-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <section/>
+  </section>
 
   <!-- SUCCESS STORIES SECTION-->
-  <section class="sucess">
+  <section class="success">
     <div class="grid-spaceAround">
-     <h2 class="col-7">Success Stories</h2>
+      <h2 class="col-7">Success Stories</h2>
     </div>
-    <div class="grid-spaceAround">
-       <div class="col-4_xs-11">
-        <img src="images/pic1.png" alt="vegan"/>
-        <h2>Success #1 </h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href> Page of the 1st story</a>
+    <div class="success">
+       <div class="success_1 grid_xs-11">
+         <div class="col-5">
+          <img class="col-2" src="images/pic1.png" alt="vegan"/>
+          <div class="col-3">
+            <h2>Success #1 </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href> Page of the 1st story</a>
+          </div>
+        </div>
       </div>
-      <div class="col-4_xs-11">
-        <img src="images/pic1.png" alt="vegan"/>
-        <h2>Success #2 </h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href> Page of the 2nd story</a>
+      <div class="success_2 grid-4-right_xs-11">
+        <div class="col-4">
+          <img src="images/pic1.png" alt="vegan"/>
+          <h2>Success #2 </h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href> Page of the 2nd story</a>
+        </div>
       </div>
-      <div class="col-4_xs-11">
-        <img src="images/pic1.png" alt="vegan"/>
-        <h2>Success #3 </h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href> Page of the 3rd story</a>
+      <div class="success_3 grid_xs-11">
+        <div class="col-4">
+          <img src="images/pic1.png" alt="vegan"/>
+          <h2>Success #3 </h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href> Page of the 3rd story</a>
+        </div>
       </div>
    </div>
   </section>
 
 <!--CONTACT FORM SECTION-->
  <section id="contact">
-   <h2 class="grid-center">Want to Participate?</h2>
-   <form class="grid-center" method="POST" action="http://formspree.io/bedran.v.v@gmail.com">
+   <h2 class="grid-center get_in_touch">Want to Participate?</h2>
+   <form class="grid-spaceAround" method="POST" action="http://formspree.io/bedran.v.v@gmail.com">
      <input class="col-3" type="text" name="name" placeholder="Your name">
      <input class="col-3" type="email" name="_reply to" placeholder="Your email">
      <button class="col-3" type="submit">YES</button>

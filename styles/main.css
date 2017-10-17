@@ -1,14 +1,15 @@
 *{
    box-sizing: border-box;
-   border: 2px solid grey;
+
 
 
 }
 
 /* GENERAL STYLES*/
 body{
-  font-family: 'Indie Flower', cursive;
-  line-height: 1,5;
+  font-family: 'Lato', sans-serif;
+  line-height: 1,7;
+  letter-spacing: 1px;
 
 }
 h1 {
@@ -23,6 +24,7 @@ h2,h4,h5,h6{
   color:black;
   letter-spacing: 3px;
   text-align: center;
+  font-size: 40px;
 }
 h3{
   font-family: 'Alex Brush', cursive;
@@ -42,17 +44,21 @@ div.onenav, div.twonav{
   flex-direction: row-reverse;
   justify-content:space-between;
 }
+
+nav{
+  width:100%;
+  background-color:snow;
+  padding-top: 1%;
+}
 .onenav{
-  padding-left: 5%;
+  padding-left: 2%;
 }
 .twonav{
-  padding-right: 5%;
+  padding-right: 1%;
 }
-nav{
-  background-color: #77b8ce;
-}
+
 nav a{
-  color:snow;
+  color:#79b9d0;
 }
 
 nav a:hover{
@@ -72,17 +78,26 @@ nav a:hover{
 }
 
 /*Current project*/
+#current_project h2{
+  margin-top: 10%;
+}
+.current .raw h2{
+  font-size: 50px !important;
+}
 .current{
   height: 80%;
-  padding-top: 5%;
-  padding-bottom: 10%;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-bottom: 2%;
+  justify-content: center;
 }
+
 .current img{
-width: 70%;
-justify-content: center;
-padding-left: 10%;
+  width: 60%;
+  justify-content: center;
+  margin-left:20%;
+}
+.raw{
+  padding-right: 10%;
+  line-height: 2;
 }
 
 /*VIDEO*/
@@ -95,14 +110,30 @@ padding-left: 10%;
   height:100%;
 }
 
-.videodes p{
-  color: red;
+/*PROJECT DESCRIPTION*/
+.project_description{
+ margin:10% 20% 5% 20%;
 }
+
 
 /* SUCCESS STORIES SECTION*/
 .sucess img{
-  width:20%;
-  height:13%;
+  width:10%!important;
+  height:15%!important;
+}
+
+/*CONTACT FORM*/
+#contact {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#contact form{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.get_in_touch{
+  margin-top: 10%;
+  margin-bottom: 10%;  
 }
 
 /* MOBILE MENU STYLES*/
@@ -145,6 +176,7 @@ padding-left: 10%;
 .animate{
   transition: all 172ms ease-out;
 }
+
 /* Media Query*/
 @media all and (max-width:767px) {
   .nav_show{
@@ -153,5 +185,20 @@ padding-left: 10%;
   .nav_hide{
     display: none;
   }
+}
+/* The Button*/
 
+.button{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255,255,255,.78);
+  padding: 40px 0;
+}
+.button span{
+  display: inline-block;
+  background-color: orange;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #fff;
 }
