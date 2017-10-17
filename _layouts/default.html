@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts from google-->
 <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Architects+Daughter|Great+Vibes|Handlee|Indie+Flower|Patrick+Hand" rel="stylesheet">
   <!--normalize file-->
@@ -9,21 +10,21 @@
   <link rel="stylesheet" href="styles/main.css">
   <!--Icons-->
   <script src="https://use.fontawesome.com/6efc6acbea.js"></script>
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 
 <body>
   <!-- HEADER SECTION-->
   <header>
-    <nav class="grid-spaceBetween">
+    <nav class="grid-spaceBetween nav_hide">
       <!--NAVIGATION DIV-->
-      <div class="onenav col-3">
-        <a href="contact">Participate</a>
-        <a href="about">About</a>
-        <a href="home">Home</a>
+      <div class="onenav col-4">
+        <a href="#contact">Participate</a>
+        <a href="current project">Current project</a>
+        <a href="#about">About</a>
+        <a href="#home">Home</a>
       </div>
       <!--SMM DIV-->
-<!--? how to make it responsive?-->
       <div class="twonav col-2">
         <a href="https://www.facebook.com/LeraBedran" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 	      <a href="https://www.linkedin.com/in/valeria-bedran-2b099868/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -32,22 +33,51 @@
       </div>
     </nav>
 
+    <!-- MOBILE NAV-->
+<div id="container" class="nav_show">
+    <nav>
+      <a href="#home" title="Home" class="toggle-mobile-menu">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </a>
+    </nav>
+
+<nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+    <a class="col-12 center toggle-mobile-menu" href="#home">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+    <a class="col-12 center" href="current project" class="toggle-mobile-menu">Current project</a>
+    <a class="col-12 center" href="#about" class="toggle-mobile-menu">About</a>
+    <a class="col-12 center" href="#contact" class="toggle-mobile-menu">Participate</a>
+</nav>
+</div>
+    <!-- END OF MOBILE-->
+
       <!--TITLES DIV-->
-      <div class="titles grid-spaceAround">
+      <div class="titles grid-spaceAround" id="home">
         <h1 class="col-7"> Ahimsa Project</h1>
         <h3 class="col-7">Translations that matter</h3>
       </div>
 
       <!--CURRENT PROJECT-->
-      <div class"grid-spaceAround">
-        <h2 class="col-7">Current project</h2>
-      </div>
-      <div class="current grid-spaceAround">
-        <h2 class="col-7">RAW</h2>
-        <p class="col-7">At the age of 51 she was diagnosed with highly aggressive carcinoma breast cancer and was told she had 6 months to live.
-    6 months latter she was completely clean. She switched to a 100% raw diet, started to run marathons, set a World Record of 366 consecutive Marathons in one year, gained 40 000 followers all over the world and inspired Brunei government to change state nutrition policy.
-    Now she is 68, feels herself stronger every day and keeps beating world records.</p>
-    </div>
+      <section id="current project">
+        <div class"grid-spaceAround ">
+          <h2 class="col-7">Current project</h2>
+        </div>
+
+        <div class="current grid-spaceAround">
+          <div class="col-6">
+            <img src="../images/raw.jpg" alt="raw documentory">
+          </div>
+          <div class="col-6">
+            <h2>RAW</h2>
+            <p>At the age of 51 she was diagnosed with highly aggressive carcinoma breast cancer and was told she had 6 months to live.
+            6 months latter she was completely clean. She switched to a 100% raw diet, started to run marathons, set a World Record of 366 consecutive Marathons in one year, gained 40 000 followers all over the world and inspired Brunei government to change state nutrition policy.
+            Now she is 68, feels herself stronger every day and keeps beating world records.</p>
+          </div>
+        </div>
+      </section>
+
   </header>
 
   {{content}}
@@ -58,6 +88,10 @@
           <a class="col-3" href="https://www.linkedin.com/in/valeria-bedran-2b099868/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
           <a class="col-3" href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
      </nav>
+
+
    </footer>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="/javascript/scripts.js"></script>
   </body>
  </html>
