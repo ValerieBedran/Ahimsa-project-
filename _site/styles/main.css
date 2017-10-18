@@ -1,8 +1,9 @@
 *{
    box-sizing: border-box;
+   border: 1px solid transparent;
    margin:0;
    padding:0;
-   border: 2px solid grey;
+
 }
 
 /* GENERAL STYLES*/
@@ -34,7 +35,9 @@ h3{
 img{
   max-width: 100%;
 }
-
+div{
+  max-width: 100%;
+}
 /* NAVIGATION SECTION*/
 
 div.onenav, div.twonav{
@@ -47,6 +50,8 @@ nav{
   width:100%;
   background-color:snow;
   padding-top: 1%;
+  position: absolute;
+  z-index: 999;
 }
 .onenav{
   padding-left: 2%;
@@ -88,7 +93,6 @@ nav a:hover{
   padding-bottom: 2%;
   justify-content: center;
 }
-
 .current img{
   width: 60%;
   justify-content: center;
@@ -97,6 +101,7 @@ nav a:hover{
 .raw{
   padding-right: 10%;
   line-height: 2;
+
 }
 
 /*VIDEO*/
@@ -111,7 +116,8 @@ nav a:hover{
 
 /*PROJECT DESCRIPTION*/
 .project_description{
- margin:10% 20% 5% 20%;
+ margin:5% 20% 5% 20%;
+ height: 100vh;
 }
 
 
@@ -124,21 +130,58 @@ nav a:hover{
 /*CONTACT FORM*/
 #contact {
   margin-top: 5%;
-  margin-bottom: 10%;
-  background-image:url('../images/pic4.png');
+  background-image:url('../images/pic7.jpeg');
   background-repeat: no-repeat;
-  background-size: auto;
-  text-align: justify;
-  background-position: bottom;
+  background-size: cover;
+  background-position:bottom;
+  height: 100vh;
   background-attachment: fixed;
 }
 #contact form{
   margin-top: 5%;
   margin-bottom: 10%;
+  margin-left: 5%;
 }
-.get_in_touch{
+#contact h2{
   margin-top: 10%;
-  margin-bottom: 10%;
+  color: snow;
+  margin-left: 5%;
+}
+form input, button, textarea{
+  background: transparent;
+  border: 1px solid snow;
+  color: floralwhite;
+}
+form input{
+  margin-bottom: 1%;
+}
+form textarea{
+padding-bottom: 5%;
+  margin-bottom: 1%;
+}
+input.email{
+  margin-left:8%;
+}
+textarea::placeholder{
+  color: floralwhite;
+}
+input::placeholder{
+  color: floralwhite;
+}
+
+/*OTHER PROJECTS*/
+.other_projects h2{
+  font-size: 20px;
+}
+.other_projects img{
+  max-width: 40%;
+  max-height: 40%;
+  margin-left:30%;
+}
+
+/*FOOTER*/
+footer{
+text-align: center;
 }
 
 /* MOBILE MENU STYLES*/
