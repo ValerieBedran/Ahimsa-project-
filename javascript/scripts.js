@@ -4,7 +4,7 @@ $( document ).ready(function() {
   function scrollToSection(event) {
 
   // Log
-  console.log('Clicked on anchor element');
+  //console.log('Clicked on anchor element');
 
   // Prevent jumping to the section (default behaviour)
   event.preventDefault();
@@ -36,7 +36,7 @@ $('a').on('click', scrollToSection);
 function changeBodyClass(event) {
 
   // Log
-  console.log('Clicked on toggle menu class');
+  //console.log('Clicked on toggle menu class');
 
   // Prevent default event (clicking a link)
   event.preventDefault();
@@ -55,6 +55,4 @@ $('a').on('click', changeBodyClass);
 
 
 //This closes jquery
-
-
 });

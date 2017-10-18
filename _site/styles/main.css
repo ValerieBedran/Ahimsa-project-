@@ -1,6 +1,5 @@
 *{
    box-sizing: border-box;
-   border: 1px solid transparent;
    margin:0;
    padding:0;
 
@@ -35,7 +34,7 @@ h3{
 img{
   max-width: 100%;
 }
-div{
+div, section, h2{
   max-width: 100%;
 }
 /* NAVIGATION SECTION*/
@@ -47,10 +46,10 @@ div.onenav, div.twonav{
 }
 
 nav{
-  width:100%;
+  min-width:101%;
   background-color:snow;
   padding-top: 1%;
-  position: absolute;
+  position: fixed;
   z-index: 999;
 }
 .onenav{
@@ -101,7 +100,6 @@ nav a:hover{
 .raw{
   padding-right: 10%;
   line-height: 2;
-
 }
 
 /*VIDEO*/
@@ -115,16 +113,28 @@ nav a:hover{
 }
 
 /*PROJECT DESCRIPTION*/
-.project_description{
- margin:5% 20% 5% 20%;
+#about{
  height: 100vh;
+}
+#about h2{
+  padding-top: 10%;
+  padding-bottom: 0%;
+  height: 100px;
 }
 
 
 /* SUCCESS STORIES SECTION*/
-.sucess img{
-  width:10%!important;
-  height:15%!important;
+
+.success img{
+  width:40%!important;
+  height:45%!important;
+  margin-left: 30%;
+  margin-top: 20%;
+
+}
+.success h2{
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 /*CONTACT FORM*/
@@ -143,9 +153,9 @@ nav a:hover{
   margin-left: 5%;
 }
 #contact h2{
-  margin-top: 10%;
+  padding-top: 10%;
   color: snow;
-  margin-left: 5%;
+  padding-left: 5%;
 }
 form input, button, textarea{
   background: transparent;
@@ -169,7 +179,7 @@ input::placeholder{
   color: floralwhite;
 }
 
-/*OTHER PROJECTS*/
+/*OTHER PROJECTS
 .other_projects h2{
   font-size: 20px;
 }
@@ -178,13 +188,19 @@ input::placeholder{
   max-height: 40%;
   margin-left:30%;
 }
+*/
 
 /*FOOTER*/
 footer{
 text-align: center;
 }
+footer nav{
+  background-color:white;
+  position:static;
+}
 
 /* MOBILE MENU STYLES*/
+
 .nav_show{
   display: none;
 }
@@ -198,6 +214,7 @@ text-align: center;
   visibility: hidden;
   opacity: 0;
   transform: scale(.96);
+
 }
 #container.mobile-menu-visible #mobile-navigation{
   visibility: visible;
@@ -216,16 +233,19 @@ text-align: center;
   border-radius: 4px;
 }
 .bg-yellow{
-  background-color: #edcdc8;
+  background-image: url('../images/pic3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .center{
   text-align: center;
+  color: floralwhite;
 }
 .animate{
   transition: all 172ms ease-out;
 }
 /* The Button*/
-
+/*
 .button{
   display: block;
   text-align: center;
@@ -239,7 +259,7 @@ text-align: center;
   padding: 10px 14px;
   border-radius: 6px;
   color: #fff;
-}
+}*/
 
 /* Media Query*/
 @media all and (max-width:767px) {
