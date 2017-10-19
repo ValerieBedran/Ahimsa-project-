@@ -7,7 +7,7 @@ $( document ).ready(function() {
   //console.log('Clicked on anchor element');
 
   // Prevent jumping to the section (default behaviour)
-  event.preventDefault();
+  //event.preventDefault();
 
   // Get anchor element hash
   var element = event.currentTarget,

@@ -1,3 +1,17 @@
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 *{
    box-sizing: border-box;
    margin:0;
@@ -29,6 +43,7 @@ h3{
   color:snow;
   letter-spacing: 3px;
   font-size: 30px;
+
 }
 
 img{
@@ -65,7 +80,7 @@ nav a{
 }
 
 nav a:hover{
-    color: pink;
+    color: #d2a3a6;
     font-weight: bold;
 }
 
@@ -78,12 +93,15 @@ nav a:hover{
   background-size: cover;
   text-align: center;
   background-attachment: fixed;
+
 }
 
-/*Current project*/
-#current_project h2{
-  margin-top: 10%;
+/*CURRENT PROJECT*/
+#current_project{
+  padding-top: 7%;
+  height: 100vh;
 }
+
 .current .raw h2{
   font-size: 50px !important;
 }
@@ -91,11 +109,13 @@ nav a:hover{
   height: 80%;
   padding-bottom: 2%;
   justify-content: center;
+  margin-top: 2%;
 }
 .current img{
   width: 60%;
-  justify-content: center;
+  text-align: center;
   margin-left:20%;
+  position: relative;
 }
 .raw{
   padding-right: 10%;
@@ -110,6 +130,7 @@ nav a:hover{
 #video iframe{
   width: 100%;
   height:100%;
+
 }
 
 /*PROJECT DESCRIPTION*/
@@ -126,15 +147,21 @@ nav a:hover{
 /* SUCCESS STORIES SECTION*/
 
 .success img{
-  width:40%!important;
-  height:45%!important;
+  width:50%!important;
+  height:50%!important;
   margin-left: 30%;
   margin-top: 20%;
-
 }
 .success h2{
-  margin-top: 10%;
+  padding-top: 10%;
   margin-bottom: 5%;
+}
+.success a{
+  text-decoration: none;
+  color: #79b9d0;
+}
+.success a:hover{
+  color: #d2a3a6;
 }
 
 /*CONTACT FORM*/
@@ -144,14 +171,15 @@ nav a:hover{
   /*background-image:url('../images/pic7.jpeg');*/
   background-repeat: no-repeat;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 #contact img{
   width: 100%;
   height: 93%;
   z-index: -1;
+  background-attachment: fixed!important;
   position: absolute;
-  background-attachment: fixed;
 }
 
 #contact form{
@@ -170,24 +198,24 @@ nav a:hover{
 }
 form input, button, textarea{
   background: transparent;
-  border: 1px solid snow;
-  color: floralwhite;
-}
-form input{
+  border: 1px solid lightgray;
+  color: antiquewhite;
+  font-family: 'Cutive Mono', monospace;
   margin-bottom: 1%;
 }
+
 form textarea{
 padding-bottom: 5%;
   margin-bottom: 1%;
 }
-input.email{
-  margin-left:8%;
-}
+
 textarea::placeholder{
-  color: floralwhite;
+  color: antiquewhite;
+  font-family: 'Cutive Mono', monospace;
 }
 input::placeholder{
-  color: floralwhite;
+  color: antiquewhite;
+  font-family: 'Cutive Mono', monospace;
 }
 
 /*OTHER PROJECTS
@@ -203,6 +231,16 @@ input::placeholder{
 
 /*FOOTER*/
 
+/*ANIMATION*/
+
+
+
+h1{
+  animation: pulse 5s;
+}
+ nav a:hover{
+    animation: pulse 5s;
+  }
 
 /* MOBILE MENU STYLES*/
 

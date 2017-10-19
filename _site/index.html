@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
-  <title>Home</title>
+  <title>Ahimsa project</title>
   <!-- Responsive Design metatag-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts from google-->
-  <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Architects+Daughter|Great+Vibes|Handlee|Indie+Flower|Patrick+Hand|Inconsolata|Josefin+Sans|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Alex+Brush|Architects+Daughter|Great+Vibes|Handlee|Indie+Flower|Patrick+Hand|Inconsolata|Josefin+Sans|Lato" rel="stylesheet">
   <!--normalize file-->
   <link rel="stylesheet" href="styles/normalize.css">
   <!--Grids-->
@@ -20,8 +20,9 @@
   <header>
     <nav class="grid-spaceBetween nav_hide" id="sticky-button">
       <!--NAVIGATION DIV-->
-      <div class="onenav col-4">
+      <div class="onenav col-5">
         <a href="#contact">Participate</a>
+        <a href="#success">Heroes</a>
         <a href="#about">About</a>
         <a href="#current_project">Current project</a>
         <a href="#home">Home</a>
@@ -42,16 +43,15 @@
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
       </a>
     </nav>
-
-<nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
-    <a class="col-12 center toggle-mobile-menu" href="#home">
-      <i class="fa fa-times" aria-hidden="true"></i>
-    </a>
-    <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
-    <a class="col-12 center" href="#current_project" class="toggle-mobile-menu">Current project</a>
-    <a class="col-12 center" href="#about" class="toggle-mobile-menu">About</a>
-    <a class="col-12 center" href="#contact" class="toggle-mobile-menu">Participate</a>
-</nav>
+    <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+      <a class="col-12 center" href="#current_project" class="toggle-mobile-menu">Current project</a>
+      <a class="col-12 center" href="#about" class="toggle-mobile-menu">About</a>
+      <a class="col-12 center" href="#contact" class="toggle-mobile-menu">Participate</a>
+    </nav>
 </div>
 </header>
     <!-- END OF MOBILE-->
@@ -98,29 +98,29 @@
   </section>
 
   <!-- SUCCESS STORIES SECTION-->
-  <section class="success">
+  <section id="success" class="success">
       <h2>Success Stories</h2>
        <div class="success_1 grid">
          <div class="col-3_sm-11_xs-11">
-           <img src="images/pic1.png" alt="vegan"/>
+           <img src="images/steve.png" alt="steve"/>
          </div>
-          <div class="col-3_sm-11_xs-11">
+          <div class="col-4_sm-11_xs-11">
             <h2>Success #1</h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <a href="#"> Page of the 1st story</a>
           </div>
-          <div class="col-6_sm-11_xs-11">
+          <div class="col-5_sm-11_xs-11">
             <!--this div stays empty-->
           </div>
         </div>
         <div class="success_2 grid">
-          <div class="col-6_sm-11_xs-11">
+          <div class="col-5_sm-11_xs-11">
             <!--this div stays empty-->
           </div>
           <div class="col-3_sm-11_xs-11">
-            <img src="images/pic1.png" alt="vegan"/>
+            <img src="images/alicia.png" alt="vegan"/>
           </div>
-          <div class="col-3_sm-11_xs-11">
+          <div class="col-4_sm-11_xs-11">
             <h2>Success #2 </h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <a href> Page of the 2nd story</a>
@@ -129,14 +129,14 @@
 
         <div class="success_3 grid">
           <div class="col-3_sm-11_xs-11">
-            <img src="images/pic1.png" alt="vegan"/>
+            <img src="images/johny.png" alt="vegan"/>
           </div>
-           <div class="col-3_sm-11_xs-11">
-             <h2>Success #1</h2>
+           <div class="col-4sm-11_xs-11">
+             <h2>Success #3</h2>
              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
              <a href="#"> Page of the 1st story</a>
            </div>
-           <div class="col-6_sm-11_xs-11 emptyDiv">
+           <div class="col-5_sm-11_xs-11 emptyDiv">
              <!--this div stays empty-->
            </div>
          </div>
@@ -151,14 +151,14 @@
    <form method="POST" action="http://formspree.io/bedran.v.v@gmail.com">
      <div class="grid">
        <input class="col-5_sm-5_xs-5" type="text" name="name" placeholder="Name">
-       <input class="col-5_sm-5_xs-5 email" type="email" name="_reply to" placeholder="Email">
-       <textarea class="col-11_sm-10_xs-10" name="message" placeholder="Message" style="height: 130px;"></textarea>
+       <input class="col-7_sm-5_xs-5 email" type="email" name="_reply to" placeholder="Email">
+       <textarea class="col-12_sm-10_xs-10" name="message" placeholder="Message" style="height: 130px;"></textarea>
      </div>
        <div class="grid">
          <div class="col-9_sm-9_xs-9 emptyDiv">
            <!--this div stays empty-->
          </div>
-         <button class="col-2_sm-5_xs-5" type="submit">Yes</button>
+         <button class="col-3_sm-5_xs-5" type="submit">Yes</button>
        </div>
    </form>
 
